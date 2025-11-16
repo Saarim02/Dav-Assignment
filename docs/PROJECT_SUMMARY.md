@@ -134,15 +134,15 @@ DAV/
 ```javascript
 {
   location: 'Warehouse A',
-  level: 'high'  // 'low' | 'medium' | 'high'
+  level: 'high' 
 }
 ```
 
 ### Time-Series Data
 ```javascript
 {
-  labels: ['10:00', '10:05', '10:10', ...],  // Time strings
-  delays: [2, 3, 1, 5, ...]                  // Delay values
+  labels: ['10:00', '10:05', '10:10', ...], 
+  delays: [2, 3, 1, 5, ...]                 
 }
 ```
 
@@ -154,12 +154,6 @@ npm install
 npm start
 ```
 
-### Customization
-- **Update Frequency**: Change interval in `App.jsx` (default: 5000ms)
-- **Add Shipments**: Edit `initialShipments` in `mockData.js`
-- **Change Colors**: Modify color functions in component files
-- **Map Center**: Adjust `center` prop in `MapView.jsx`
-
 ## Key Design Decisions
 
 1. **Mock Data Only**: No backend needed, easy to run and understand
@@ -168,35 +162,3 @@ npm start
 4. **CSS Grid Layout**: Clean, responsive layout without frameworks
 5. **Minimal Dependencies**: Only essential libraries
 6. **Beginner-Friendly**: Well-commented, simple code structure
-
-## Use Cases
-
-- **Learning**: Understanding React, maps, and charts
-- **Prototyping**: Quick supply chain visualization demo
-- **Portfolio**: Showcase React and data visualization skills
-- **Foundation**: Base for real supply chain monitoring system
-
-## Limitations
-
-- All data is mocked (no real API integration)
-- No data persistence (resets on refresh)
-- No user authentication
-- No historical data storage
-- Updates are simulated (not real-time from external source)
-
-## Future Enhancements
-
-- Connect to real API/backend
-- Add WebSocket for true real-time updates
-- Implement user authentication
-- Add data persistence/database
-- Include historical data analysis
-- Add filtering and search functionality
-- Export data to CSV/PDF
-
----
-
-**Version**: 1.0.0  
-**License**: See package.json  
-**Status**: Production-ready (with mock data)
-
