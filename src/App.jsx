@@ -78,10 +78,7 @@ function App() {
           </div>
         </div>
       </div>
-      
-      <footer className="app-footer">
-        <p>Data updates every 5 seconds • Last updated: {new Date().toLocaleTimeString()}</p>
-      </footer>
+
     </div>
   );
 }
